@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TT284 EMA Example Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0",user-scalable= yes/>
+   
+    <link rel="stylesheet" href="ema-form.css" />
+  </head>
+  <body>
+    <form action= "index.php" method="GET">
+      <input type="text" name="sessionID"/>
+      <input type="submit" value=""/>
+      <input type="hidden" value="1234abcd-5768-9090-efef"/>
+      </form>
+
+    </form>
+    <form
+      action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php"
+      method="post"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="form-group">
+          <label for="first_name">First Name:</label>
+          <input id="first_name" name="first_name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name: </label>
+          <input id="last_name" name="last_name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="house_number">House Number: </label>
+          <input id="house_number" name="house_number" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="post_code">Postcode: </label>
+          <input id="post_code" name="post_code" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input id="email" name="email" type="email" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Injections</legend>
+        <div class="form-group form-inline">
+          <span class="checkbox">
+            <input
+              id="history_illness_0"
+              name="history_illness"
+              type="checkbox"
+              value="Smallpox"
+            />
+            <label for="history_illness_0">Smallpox</label>
+          </span>
+          <span class="checkbox">
+            <input
+              id="history_illness_1"
+              name="history_illness"
+              type="checkbox"
+              value="Mumps"
+            />
+            <label for="history_illness_1">Mumps</label>
+          </span>
+          <span class="checkbox">
+            <input
+              id="history_illness_2"
+              name="history_illness"
+              type="checkbox"
+              value="Malaria"
+            />
+            <label for="history_illness_2">Malaria</label>
+          </span>
+          <span class="checkbox">
+            <input
+              id="history_illness_3"
+              name="history_illness"
+              type="checkbox"
+              value="Measles"
+            />
+            <label for="history_illness_3">Measles</label>
+          </span>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Current Medication</legend>
+        <div class="form-group form-inline">
+          <span class="prompt">Are you currently taking any medication?</span>
+          <input
+            id="medication_now_y"
+            name="medication_now"
+            type="radio"
+            value="Yes"
+          />
+          <label for="medication_now_y">Yes</label>
+          <input
+            id="medication_now_n"
+            name="medication_now"
+            type="radio"
+            value="No"
+          />
+          <label for="medication_now_n">No</label>
+        </div>
+        <div class="form-group form-wrap">
+          <label
+            >If you are currently taking medication, please indicate it in the
+            space below:</label
+          >
+          <textarea name="current_medication" rows="12" cols="50"></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
